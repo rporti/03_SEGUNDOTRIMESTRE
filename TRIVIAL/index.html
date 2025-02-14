@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Preguntas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            width: 80%;
+            max-width: 400px;
+        }
+
+        input, button {
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Juego de Preguntas</h2>
+        <p id="pregunta">Presiona el botón para obtener una pregunta</p>
+        
+        <input type="text" id="respuestaUsuario" placeholder="Escribe tu respuesta aquí">
+        <button onclick="comprobarRespuesta()">Comprobar</button>
+        <button onclick="obtenerPregunta()">Nueva Pregunta</button>
+        
+        <p id="mensaje"></p>
+    </div>
+
+    <script src="script.js">
+    </script>
+
+</body>
+</html>
